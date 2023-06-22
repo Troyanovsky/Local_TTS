@@ -42,7 +42,7 @@ class TTSApp:
         self.source_file_label.pack()
 
         # Initialize TTS object
-        self.model_name = "tts_models/en/ljspeech/fast_pitch"
+        self.model_name = "tts_models/en/ljspeech/tacotron2-DDC_ph" # or "tts_models/en/ljspeech/fast_pitch"
         self.vocoder_name = "vocoder_models/en/ljspeech/hifigan_v2"
         self.tts = TTS(self.model_name, vocoder_path=self.vocoder_name)
 
